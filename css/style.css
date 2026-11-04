@@ -117,7 +117,6 @@ color: #d9d9d9;
     }
 
 
-/* Header va sahifa uchun to'q fon */
     body {
       background-color: #121517;
       margin: 0;
@@ -249,7 +248,6 @@ margin-bottom: 55px;
 
 
 
-/* Mahsulot kartochkasi */
     .coffee-card {
       background: linear-gradient(180deg, #1d2226 0%, #13171a 100%);
       border: 1px solid #25b865; /* Aktiv yashil xoshiya */
@@ -272,7 +270,6 @@ border-width: 1.5px; */
       box-shadow: 0 15px 35px rgba(37, 184, 101, 0.25);
     }
 
-    /* Rasm orqasidagi yashil doira */
     .cup-wrapper {
       position: relative;
       width: 140px;
@@ -293,17 +290,15 @@ border-width: 1.5px; */
       z-index: 1;
     }
 
-    /* Stakan rasmi stili */
     .cup-img {
       position: relative;
       z-index: 2;
-      width: 145px; /* Stakan doiradan biroz kattaroq chiqishi uchun */
+      width: 145px; 
       height: auto;
       top: -10px;
       filter: drop-shadow(0 10px 15px rgba(0,0,0,0.5));
     }
 
-    /* Sarlavha va matn */
     .coffee-title {
       font-size: 1.5rem;
       font-weight: 500;
@@ -318,7 +313,6 @@ border-width: 1.5px; */
       line-height: 1.4;
     }
 
-    /* Narx va hajm */
     .price-row {
       display: flex;
       align-items: baseline;
@@ -338,7 +332,6 @@ border-width: 1.5px; */
       color: #7b838a;
     }
 
-    /* Yashil Buy Product tugmasi */
     .btn-buy {
       background-color: #25b865;
       color: #ffffff;
@@ -759,3 +752,222 @@ margin-bottom: 55px;
 .parent5{
   margin-bottom: 100px;
 }
+
+* {
+  box-sizing: border-box;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
+
+body {
+  overflow-x: hidden;
+}
+
+@media (max-width: 1200px) {
+  .parent,
+  .parent2,
+  .h1-coffee,
+  .h1-img,
+  .parent5 {
+    flex-direction: column;
+    align-items: center;
+    gap: 40px;
+  }
+
+  .parent {
+    gap: 50px;
+    padding-top: 40px;
+  }
+
+  .h1-coffee,
+  .h1-img,
+  .parent5 {
+    justify-content: center;
+  }
+
+  .card-bac {
+    width: 100%;
+    max-width: 100%;
+    height: auto;
+    padding: 30px 20px;
+    flex-wrap: wrap;
+  }
+
+  .top,
+  .bottom {
+    flex-wrap: wrap;
+  }
+
+  .promo-card,
+  .promo-card2,
+  .promo-card3,
+  .promo-card4,
+  .promo-card5 {
+    max-width: 100%;
+    width: 100%;
+  }
+}
+
+@media (max-width: 992px) {
+  .chap h1,
+  .on2 h1,
+  .h1-coffee h1,
+  .h1-img h1,
+  .chap3 h1 {
+    font-size: clamp(2.8rem, 7vw, 5rem);
+  }
+
+  .chap-p,
+  .on2 p,
+  .h1-coffee p,
+  .h1-img p,
+  .chap3 p {
+    font-size: clamp(1rem, 2.4vw, 1.25rem);
+  }
+
+  .chap-btn1,
+  .chap-btn2 {
+    width: 100%;
+    display: block;
+    margin: 0 0 12px;
+  }
+
+  .custom-nav-link {
+    margin-left: 0;
+    margin-right: 1rem;
+  }
+
+  .navbar-nav {
+    gap: 0.5rem;
+  }
+
+  .parent3 {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  .footer__top,
+  .footer__bottom {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .footer__nav {
+    width: 100%;
+    max-width: 100%;
+    flex-wrap: wrap;
+    gap: 24px 40px;
+  }
+}
+
+@media (max-width: 576px) {
+  .custom-navbar {
+    padding: 10px 0;
+  }
+
+  .navbar-brand-starbucks img {
+    max-width: 120px;
+  }
+
+  .parent,
+  .parent2,
+  .h1-coffee,
+  .h1-img,
+  .parent5 {
+    gap: 22px;
+  }
+
+  .chap h1,
+  .on2 h1,
+  .h1-coffee h1,
+  .h1-img h1,
+  .chap3 h1 {
+    line-height: 1.1;
+  }
+
+  .stats-section {
+    padding: 30px 0 0;
+  }
+
+  .stat-number {
+    font-size: 2.2rem;
+  }
+
+  .stat-label {
+    font-size: 0.95rem;
+  }
+
+  .card-bac {
+    margin-top: 50px;
+    padding: 20px 12px;
+    border-radius: 24px;
+  }
+
+  .card {
+    width: 100%;
+  }
+
+  .card h4 {
+    font-size: 1.5rem;
+  }
+
+  .card p {
+    font-size: 1rem;
+  }
+
+  .coffee-card {
+    width: 100%;
+    max-width: 320px;
+  }
+
+  .h1-img {
+    text-align: center;
+  }
+
+  .top,
+  .bottom {
+    flex-direction: column;
+  }
+
+  .promo-card,
+  .promo-card2,
+  .promo-card3,
+  .promo-card4,
+  .promo-card5 {
+    min-height: 220px;
+    padding: 25px 20px;
+  }
+
+  .promo-title {
+    font-size: 1.4rem;
+  }
+
+  .footer__inner {
+    padding: 32px 20px;
+  }
+
+  .logo {
+    margin-right: 0;
+    font-size: 28px;
+  }
+
+  .footer__column a {
+    font-size: 16px;
+  }
+
+  .phone {
+    font-size: 18px;
+  }
+
+  .arrow {
+    width: 56px;
+    height: 56px;
+    font-size: 28px;
+    border-radius: 18px;
+  }
+}
+
